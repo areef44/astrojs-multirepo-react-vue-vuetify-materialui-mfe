@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import VueRemoteComponent from '../components/vueComponent.vue'
+import MyReactComponent from '../components/MyReactComponent.tsx';
+---
+
+<Layout title="Welcome to Astro.">
+		<div>
+			<VueRemoteComponent client:only="vue"/>
+		</div>
+		<div>
+			<MyReactComponent client:only="react"/>
+		</div>
+</Layout>
+
