@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MyReactComponent from "../components/MyReactComponent";
+---
+
+<Layout title="React Components">
+    <div>
+        <MyReactComponent client:only="react"/>
+    </div> 
+</Layout>

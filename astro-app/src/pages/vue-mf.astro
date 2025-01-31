@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro'
+import VueRemoteComponent from '../components/VueComponent.vue'
+---
+
+<Layout title='vue module federation'>
+    <div>
+			<VueRemoteComponent client:only="vue"/>
+	</div>
+</Layout>

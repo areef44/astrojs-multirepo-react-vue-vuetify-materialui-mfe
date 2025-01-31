@@ -1,0 +1,19 @@
+---
+const links = [
+  { name: 'Astro Page', path: '/' },
+  { name: 'Vue Components', path: '/vue' },
+  { name: 'React Components', path: '/react' },
+  { name: 'Vue Module Federation', path: '/vue-mf' },
+  { name: 'React Module Federation', path: '/react-mf' },
+];
+---
+
+<nav>
+    <ul style="display: flex; list-style: none; gap: 1rem;">
+      {links.map(link => (
+        <li>
+          <a href={link.path}>{link.name}</a>
+        </li>
+      ))}
+    </ul>
+</nav>
